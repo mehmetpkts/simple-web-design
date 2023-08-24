@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .link{
+            display: flex;
+            background-color: rgb(35, 33, 33);
+
+        }
+        .link a{
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .link a:hover{
+            background-color: rgb(165, 111, 12);
+            color: black;
+        }
+        .row{
+            display: flex;
+            padding-top: 5px;
+        }
+        .soldaki{
+            flex: 30%;
+            background-color: rgb(230, 230, 220);
+            padding: 10px;
+        }
+        .sagdaki{
+            flex: 70%;
+            padding: 10px;
+        }
+        .image{
+            background-color: gray;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        #footer{
+            text-align: center;
+            background-color: rgba(93, 91, 91, 0.596);
+            height: 100px;
+        }
+        @media screen and (max-width:800px)
+        {
+            .row , .link{
+                flex-direction: column;
+            }
+        }
+    </style>
+    <title>Flexbox website</title>
+</head>
+<body>
+    
+    <div style="width: 70%;margin: auto;">
+        <div style="background-color: yellow;padding: 5px;  ">
+            <h4 style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolores!</h4>
+        </div>
+        <div style="background-color: rgba(4, 168, 168, 0.995);padding:60px;color: white;">
+            <h1 style="text-align: center;">My Website</h1>
+            <p style="text-align: center;">with a <b>flexible</b> layout</p>
+        </div>
+        <div class="link">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+        <div class=" row">
+            <div class="soldaki">
+                <h2>About Me</h2>
+                <p>Foto of me</p>
+                <div class="image" style="height: 250px;">
+                    <p>image</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eaque?</p>
+                <h3>More Text</h3>
+                <p>lorem impsum champions lauge</p>
+                <div class="image">
+                    <p>image</p>
+                </div>
+                <div class="image">
+                    <p>image</p>
+                </div>
+                <div class="image">
+                    <p>image</p>
+                </div>
+            </div>
+            <div class="sagdaki">
+                <h1>TITLE HEADING</h1>
+                <p>Title description Dec 07 2017</p>
+                <div class="image" style="height: 250px;">
+                    <p>image</p>
+                </div>
+                <p>Some text</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui labore accusamus cumque, officiis libero sequi illo harum ipsa minus perspiciatis architecto eius natus, similique ad deleniti atque vitae excepturi.</p>
+                
+                <h1>TITLE HEADING</h1>
+                <p>Title description Dec 02 2017</p>
+                <div class="image" style="height: 250px;">
+                    <p>image</p>
+                </div>
+                <p>Some text</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem qui labore accusamus cumque, officiis libero sequi illo harum ipsa minus perspiciatis architecto eius natus, similique ad deleniti atque vitae excepturi.</p>
+                </div>
+        </div>
+        <div id="footer">
+            <h1 style="margin: auto;padding-top: 33.8px;">FOOTER</h1>
+        </div>
+
+    </div>
+
+</body>
+</html>
